@@ -524,6 +524,17 @@ say $age.nude;
 
 NOTE: For the complete list of methods applicable to Rational Numbers, see https://docs.raku.org/type/Rat
 
+.Objects
+Any object, covered later in the guide, can be assigned to a scalar:
+
+[source,perl6]
+----
+class Greeting {
+   has Str $!greeting = 'Hello world!';
+}
+my $greeting-object = Greeting.new();
+----
+
 === Arrays
 Arrays are lists containing multiple values.
 
